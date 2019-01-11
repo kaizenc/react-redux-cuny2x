@@ -9,7 +9,7 @@ const store = createStore(counter);
 
 ReactDOM.render(
   <Provider store = {store}>
-    <h1>Hello World!</h1>
+    <h1>To Do List</h1>
     <ToDoApp />
   </Provider>,
   document.getElementById("root")

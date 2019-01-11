@@ -1,18 +1,20 @@
 import { connect } from "react-redux";
 import ToDo from './ToDo';
-import { ADD, REMOVE , AddToDo } from "../actions";
+import { ADD, REMOVE , AddToDo , RemoveToDo} from "../actions";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    value: state.value
+    todos: state.todos
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return{
     addNewToDo: (value) => {
-      console.log(value);
       dispatch(AddToDo(value));
+    },
+    removeToDo: (value) => {
+      dispatch(RemoveToDo(value));
     },
   };
 }

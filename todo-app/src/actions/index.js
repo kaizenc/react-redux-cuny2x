@@ -13,7 +13,7 @@ export const AddToDo = (value = "") => {
   }
 }
 
-export const RemoveToDo = (value = 0) => {
+export const RemoveToDo = (value = "") => {
   return {
     type: REMOVE,
     value: value
