@@ -9,13 +9,13 @@ export const REMOVE = "REMOVE";
 export const AddToDo = (value = "") => {
   return {
     type: ADD,
-    value // basically value: value
+    value: value // basically value: value
   }
 }
 
 export const RemoveToDo = (value = 0) => {
   return {
-    type: REMOVE
-    value
+    type: REMOVE,
+    value: value
   }
 }

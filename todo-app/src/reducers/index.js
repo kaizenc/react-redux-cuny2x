@@ -10,7 +10,7 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD:
-      return Object.assign({}, state, state.todos = state.todos.append(action.value))
+      return Object.assign({}, state, state.todos = state.todos.concat([action.value]))
     case REMOVE:
       return Object.assign({}, state, state.value--)
     default:
